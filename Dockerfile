@@ -31,6 +31,3 @@ RUN python3 -m venv --system-site-package myenv1 myenv2 myenv3 myenv4 \
 && pip3 install scikit-learn==0.18.2 \
 && python -m ipykernel install --user --name=myenv4 \
 && deactivate
-
-# RUN mkdir /backpack/public
-# VOLUME . /backpack/public
