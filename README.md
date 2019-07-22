@@ -2,7 +2,7 @@
 
 ## A Docker image with 4 latest versions of sk-learn
 
-### **Set-up**
+### **Pre-requisite**
 - Docker must be installed on your machine
 - git clone this repo
 - run the following commands from inside

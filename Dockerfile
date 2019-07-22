@@ -16,18 +16,21 @@ RUN python3 -m venv --system-site-package myenv1 myenv2 myenv3 myenv4 \
 && pip3 install scikit-learn==0.21.2 \
 && ipython kernel install --user --name=myenv1 \
 && deactivate \
-# ----- install sk-learn - version specific for env1 ----- 
-&& . /backpack/myenv1/bin/activate \
+# ----- install sk-learn - version specific for env2 ----- 
+&& . /backpack/myenv2/bin/activate \
 && pip3 install scikit-learn==0.20.2 \
 && ipython kernel install --user --name=myenv2 \
 && deactivate \
-# ----- install sk-learn - version specific for env1 ----- 
-&& . /backpack/myenv1/bin/activate \
+# ----- install sk-learn - version specific for env3 ----- 
+&& . /backpack/myenv3/bin/activate \
 && pip3 install scikit-learn==0.19.2 \
 && ipython kernel install --user --name=myenv3 \
 && deactivate \
-# ----- install sk-learn - version specific for env1 ----- 
-&& . /backpack/myenv1/bin/activate \
+# ----- install sk-learn - version specific for env4 ----- 
+&& . /backpack/myenv4/bin/activate \
 && pip3 install scikit-learn==0.18.2 \
 && ipython kernel install --user --name=myenv4 \
 && deactivate
+
+# RUN mkdir /backpack/public
+# VOLUME . /backpack/public
