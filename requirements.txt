@@ -1,6 +1,7 @@
 numpy
 scipy
 notebook
+ipykernel
 matplotlib
 seaborn
 pandas
