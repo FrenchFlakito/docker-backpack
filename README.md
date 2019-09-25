@@ -1,6 +1,6 @@
 # Docker Backpack 
 
-## A Docker Ubuntu image with the 4 latest versions of Scikit-Learn
+## A Docker Ubuntu image with several Python libraries installed for data science.
 
 
 ### **Pre-requisite**
