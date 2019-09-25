@@ -1,14 +1,17 @@
-# dockerized-sklearn-envs 
+# Docker Backpack 
 
-## A Docker image with 4 latest versions of sk-learn
+## A Docker Ubuntu image with the 4 latest versions of Scikit-Learn
+
 
 ### **Pre-requisite**
 - Docker must be installed on your machine
 - ```git clone``` this repo
+- ```cd``` into the directory just created
 - run the following commands from inside
 
 ### **Set-up**
-- Create image from Dockerfile (along with the "requirements.txt" file)
+
+Create an image from the Dockerfile (along with the "requirements.txt" file)
 
 $ ```docker image build -t backpack_image .```
 
@@ -20,15 +23,14 @@ A container should have been created and should be running in the background. Yo
 
 $ ```docker ps```
 
-### Launch Jupyter Notebook
-- Enter your running container :
+# Usage
 
+### "Enter" your running container :
 $ ```docker container exec -it backpack bash```
 
-- Launch Jupyter Notebook with these notable flags :
-
+### Launch Jupyter Notebook
 $ ```jupyter notebook --ip=0.0.0.0 --no-browser --allow-root```
 
 
-### Sync-ing files
+### Syncing files
 The ```run``` command above provides a "volume" to share files between host and container.
